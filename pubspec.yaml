@@ -9,8 +9,16 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  get: ">=4.0.0 <6.0.0"
-  path_provider: ^2.0.1
+  # 兼容ohos_flutter
+  get:
+    git:
+      url: "https://gitcode.com/openharmony-sig/fluttertpc_get"
+  # 兼容ohos_flutter
+  path_provider:
+    git:
+      url: https://gitcode.com/openharmony-sig/flutter_packages.git
+      ref: master
+      path: packages/path_provider/path_provider
   #platform_info: ^3.0.0-nullsafety.1
 
 dev_dependencies:
